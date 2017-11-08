@@ -7,6 +7,23 @@ h5 {
   margin-left: 2%;
 }
 
+#add-player-button {
+  margin-left: 2%;
+  background-color: #252;
+}
+
+#add-player-button:hover {
+  background-color: #5b5;
+}
+
+.table-button {
+  background-color: #245;
+}
+
+.table-button:hover {
+  background-color: red;
+}
+
 a {
   color: #51677E;
   text-decoration: underline;

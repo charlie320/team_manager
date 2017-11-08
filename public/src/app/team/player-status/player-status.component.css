@@ -11,7 +11,7 @@
 }
 
 #status-table  {
-  max-width: 40%;
+  max-width: 75%;
   margin-left: 2%;
 }
 
@@ -27,3 +27,5 @@ button {
 h4, h5 {
   margin-left: 2%;
 }
+
+@media (max-width:768px){.status-button{width:25%; height: 10%; font-size: .5em}#status-table{max-width: 100%}}

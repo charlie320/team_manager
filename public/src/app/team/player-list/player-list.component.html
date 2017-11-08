@@ -1,4 +1,5 @@
-<h5><a href="#" [routerLink]="['new']">Add Player</a></h5>
+<!-- <h5><a href="#" [routerLink]="['new']">Add Player</a></h5> -->
+<button class="waves-effect waves-light btn" id="add-player-button" [routerLink]="['new']">Add Player</button>
 
 <table class="bordered" id="player-table">
   <thead>
@@ -12,7 +13,7 @@
     <tr *ngFor="let player of players; let idx = index">
       <td>{{player.name}}</td>
       <td>{{player.prefPosition}}</td>
-      <td><button (click)="destroyPlayer(player._id, idx)">Delete</button></td>
+      <td><button class="table-button waves-effect waves-light btn" (click)="destroyPlayer(player._id, idx)">Delete</button></td>
     </tr>
   </tbody>
 </table>
