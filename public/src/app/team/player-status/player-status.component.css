@@ -1,9 +1,9 @@
 .playing {
-  background: red;
+  background: green;
 }
 
 .notplaying {
-  background: green;
+  background: red;
 }
 
 .undecided {
@@ -20,6 +20,10 @@ button {
   background: silver;
 }
 
+.status-button {
+padding: .1rem .5rem;
+}
+
 .game-button {
   background: #51677E;
 }
@@ -28,4 +32,4 @@ h4, h5 {
   margin-left: 2%;
 }
 
-@media (max-width:768px){.status-button{width:25%; height: 10%; font-size: .5em}#status-table{max-width: 100%}}
+@media (max-width:700px){.status-button{width:25%; height: 10%; font-size: .5em}#status-table{max-width: 100%}}
