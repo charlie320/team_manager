@@ -1,0 +1,23 @@
+
+
+
+<div id="add-player-form">
+  <h4>Add Player</h4>
+  <form (submit)="createPlayer()">
+    <div class="input-field">
+      <label for="player-name">Player Name</label>
+      <input type="text" id="player-name" name="name" [(ngModel)]="newPlayer.name">
+    </div>
+    <div class="input-field">
+      <label for="pref-position">Preferred Position</label>
+      <input type="text" id="pref-position" name="prefPosition" [(ngModel)]="newPlayer.prefPosition">
+    </div>
+
+    <input type="submit" value="Add">
+
+  </form>
+</div>
+
+<div>
+  <p *ngFor="let error of errors">{{error}}</p>
+</div>

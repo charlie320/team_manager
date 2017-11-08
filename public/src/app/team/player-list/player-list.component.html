@@ -1,0 +1,18 @@
+<h5><a href="#" [routerLink]="['new']">Add Player</a></h5>
+
+<table class="bordered" id="player-table">
+  <thead>
+    <tr>
+      <th>Player Name</th>
+      <th>Preferred Position</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let player of players; let idx = index">
+      <td>{{player.name}}</td>
+      <td>{{player.prefPosition}}</td>
+      <td><button (click)="destroyPlayer(player._id, idx)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
